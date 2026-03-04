@@ -1,0 +1,15 @@
+12.5749 	WARNING 	User requested fullscreen with size [1088  614], but screen is actually [1920, 1200]. Using actual size
+14.8880 	WARNING 	fillColorSpace parameter is deprecated. Please use colorSpace instead.
+14.8881 	WARNING 	lineColorSpace parameter is deprecated. Please use colorSpace instead.
+14.9577 	WARNING 	fillColorSpace parameter is deprecated. Please use colorSpace instead.
+14.9578 	WARNING 	lineColorSpace parameter is deprecated. Please use colorSpace instead.
+15.0385 	WARNING 	fillColorSpace parameter is deprecated. Please use colorSpace instead.
+15.0386 	WARNING 	lineColorSpace parameter is deprecated. Please use colorSpace instead.
+16.0320 	DEPRECATION 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+16.0346 	DATA 	Keypress: space
+17.1032 	DEPRECATION 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+19.0459 	DEPRECATION 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+19.8790 	DATA 	Keypress: space
+21.0441 	DEPRECATION 	Clock.add() is deprecated in favor of .addTime() due to the counterintuitive design (it added time to the baseline, which reduced the values returned from getTime() )
+21.6275 	DATA 	Keypress: escape
+22.0583 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
