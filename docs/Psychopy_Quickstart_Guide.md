@@ -14,7 +14,7 @@ This guide is organized into three levels.
 
 | Level | Goal | Steps to complete |
 |-------|------|-------------------|
-| **Level 1** | Downloading necessary files | Sections 1 → 2
+| **Level 1** | Powershell and Downloads | Sections 1 → 2
 | **Level 2** | Familiarizing with the new applications | Sections 3 → 4 → 5 → 6 |
 | **Level 3** | Edit or adjust an existing task | Sections 1 → 2 → 3 → 4 → 5 → 7 |
 
@@ -22,7 +22,7 @@ This guide is organized into three levels.
 
 ## The Big Picture: How the Tools Connect
 
-(add image)
+![AQR1vt8.jpeg (2814×1536)](https://i.imgur.com/AQR1vt8.jpeg)
 
 | Tool | What it does |
 |------|--------------|
@@ -37,9 +37,11 @@ This guide is organized into three levels.
 
 ## Section 1 — Enable Script Execution (Windows only)
 
+Powershell is a **a command-line shell and scripting platform for automation and systems management**. In other words, it can controll your computer similar to what we do when tuning our settings in our smartphones.
+
 Windows blocks scripts by default. You must change this setting once before anything else will work. This is the first line of code you going to run!
 
-1. Press `Win`, type **PowerShell**, right-click it, and choose **Run as administrator**.
+1. Press `Win`, type **PowerShell**, right-click it, and choose **Run as administrator**. ![run-powershell-from-cortana.png (400×587)](https://www.top-password.com/blog/wp-content/uploads/2016/03/run-powershell-from-cortana.png)
 2. Paste the following command and press `Enter`:
    
    ```powershell
@@ -66,9 +68,11 @@ Complete these downloads before starting any other step.
 | 3 | **psychopy_env.yml** | [github.com/rcarrioncanonico/Momentary-Assesment-Tools](https://github.com/rcarrioncanonico/Momentary-Assesment-Tools/blob/main/psychopy_env.yml) | Click **Raw**, then `Ctrl+S` to save as `psychopy_env.yml` |
 | 4 | **Git** | [Git - Install](https://git-scm.com/install/) | Necessary to Push code to Pavlovia |
 
-> **Important:** During Git Installation there will be a window that will ask you to choose **the default editor used by Git** be sure to select Visual Studio Code just like in this image (image) (its on my WA) You can click next on the other configurations.
+> **Important:** During Git Installation there will be a window that will ask you to choose **the default editor used by Git** be sure to select Visual Studio Code just like in this image ![0J9Z70F.jpeg (668×397)](https://i.imgur.com/0J9Z70F.jpeg) This is the only modification you have to do during installation.
+> 
+> **Important** During Miniconda Installation be sure to leave this box unchecked. ![wnWlWSU.png (673×86)](https://i.imgur.com/wnWlWSU.png)
 
-### 2b. Needed Accounts
+### 2b. Necessary Accounts
 
 | # | What | Where to get it | Notes |
 |---|------|-----------------|-------|
@@ -90,11 +94,11 @@ Complete these downloads before starting any other step.
 
 Once Miniconda is intalled you will have a new application called **Anaconda Prompt** which looks like this:
 
-(image)
+![8wSNduI.png (422×303)](https://i.imgur.com/8wSNduI.png)
 
 To build the `psychopy_env` workspace that we need for all scripts to run PsychoPy tasks we need to:
 
-1. 1.) Press `Win`, type **Anaconda Prompt**, and open it.
+1. 1.) Press `Win`, type **Anaconda Prompt**, and open it (same as in **section 1**).
 2. 2.) *Skip this step if your `psychopy_env.yml` is in the Downloads folder*. To change where **Anaconda Prompt** searches for the folder containing the saved`psychopy_env.yml`. Copy and paste the code below
 
 ```cmd
@@ -126,6 +130,8 @@ cd %USERPROFILE\Documents
 
 ---
 
+It will appear something like this: ![vvyGGit.png (1110×408)](https://i.imgur.com/vvyGGit.png)
+
 ## Section 4 — GitHub Familiarization
 
 Like anything new, GitHub looks scary and contains a lot of new terminology which we are not use to. Terms like **"Repositories"**, **"Commit"**, **"Pull Requests"** and **"Branch"** are common terms in the GitHub community
@@ -135,12 +141,14 @@ You have access to this document through the public *repository* known as `EMA-I
 As you can see the `EMA-In-Lab-Protocol` has a lot of different files in it. This Quick Guide PDF was just one of those files inside that repository. In order to use this protocol we will want to clone (download) the whole repository into your computer.
 
 There are different ways of saving (cloning) a repository into your computer. The simplest way of doing that is to go to the **"Green Box** that has **"Code** written on it, **click** on it and **click** **Download Zip**
-(image)
 
-Once the Zip file is download. You will find it in yout files in "Downloads", hover the cursor on the zip file, *right click* and then *extract everything* and confirm the following pop-ups.
-(image)
+![LpD6791.png (592×535)](https://i.imgur.com/LpD6791.png)
+
+Once the Zip file is download. You will find it in your files in "Downloads", hover the cursor on the zip file, *right click* and then *extract everything* and confirm extraction.
 
 A new folder with the same name of the zip file will be created, be sure to remember where it is located, which would be in the Downloads folder if you don´t decide to change its location.
+
+![Lxs2qDJ.png (885×46)](https://i.imgur.com/Lxs2qDJ.png)
 
 ## Recommended- Obtain Copilot Pro
 
@@ -169,17 +177,21 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 As this tutorial works within the VS-Code enviroment,  we are going to need to install some extensions to run other types of files such as Jupyter Notebook files known to finish in `.ipynb`.
 
-1. Open VS Code.
-2. Click the **Extensions** icon in the left sidebar (it looks like four squares, or press `Ctrl+Shift+X`). (image)
-3. Search for **Jupyter** (publisher: Microsoft) and click **Install**.
-4. Search for **GitHub Copilot Chat** (publisher: GitHub) and click **Install**
-5. Search for **Python** (publisher: Microsoft) and click **Install**
+1. 1.) Open VS Code.
+2. 2.) Click the **Extensions** icon in the left sidebar (it looks like four squares, or press `Ctrl+Shift+X`).
+3. 3.) Search for **Jupyter** (publisher: Microsoft) and click **Install**. ![qaoIv07.png (1316×291)](https://i.imgur.com/qaoIv07.png)
+4. 4.) Search for **GitHub Copilot Chat** (publisher: GitHub) and click **Install** ![hoa4FRQ.png (1086×312)](https://i.imgur.com/hoa4FRQ.png)
+5. 5.) Search for **Python** (publisher: Microsoft) and click **Install** ![72Eykhs.png (1315×301)](https://i.imgur.com/72Eykhs.png)
 
 ### 4c. Open the Protocol Folder
 
-1. In VS Code, go to **File → Open Folder**.  You can find **"File"** on the top-left corner of VS-Code
-2. Navigate to Downloads Folder
-3. Select the folder known as `EMA-In-Lab-Protocol-main` (the one we downloaded and extracted in **Section 4**.
-4. Once selected you will see all of the files in the "Explorer" icon of the "Activity Bar" which is the "paper looking" icon on the left hand side of VS-Code (image)
+1. 1.) In VS Code, go to **File → Open Folder**.  You can find **"File"** on the top-left corner of VS-Code
+2. 2.) Navigate to Downloads Folder
+3. 3.) Select the folder known as `EMA-In-Lab-Protocol-main` (the one we downloaded and extracted in **Section 4**. !![Lxs2qDJ.png (885×46)](https://i.imgur.com/Lxs2qDJ.png)
+4. 4.) Once selected you will see all of the files in the "Explorer" icon of the "Activity Bar" which is the "paper looking" icon on the left hand side of VS-Code.
 
-Congratulations we are all set to start working in the Jupyter Notes
+Congratulations you are free to explore the files inside VS-Code, now that you have the jupyter extension and the enviroment set up we can
+
+```
+
+```
