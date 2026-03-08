@@ -14,9 +14,9 @@ This guide is organized into three levels.
 
 | Level | Goal | Steps to complete |
 |-------|------|-------------------|
-| **Level 1** | Powershell and Downloads | Sections 1 → 2
-| **Level 2** | Familiarizing with the new applications | Sections 3 → 4 → 5 → 6 |
-| **Level 3** | Edit or adjust an existing task | Sections 1 → 2 → 3 → 4 → 5 → 7 |
+| **Level 1** | Powershell and Downloads | Sections 1 & 2
+| **Level 2** | Familiarizing with the new applications | Sections 3,  4, & 5|
+| **Level 3** | Using the VS-Code Enviroment | Sections 6 |
 
 ---
 
@@ -38,20 +38,27 @@ This guide is organized into three levels.
 ## Section 1 — Enable Script Execution (Windows only)
 
 Powershell is a **a command-line shell and scripting platform for automation and systems management**. In other words, it can controll your computer similar to what we do when tuning our settings in our smartphones.
-
 Windows blocks scripts by default. You must change this setting once before anything else will work. This is the first line of code you going to run!
 
-1. Press `Win`, type **PowerShell**, right-click it, and choose **Run as administrator**. <img src="https://i0.wp.com/morgantechspace.com/wp-content/uploads/2021/09/powershell-run-as-administrator-1.png?w=973&ssl=1" width="400">
-2. Paste the following command and press `Enter`:
-  
-   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-  
+1. Press **Win**, type **Powershell**, right-click it, and choose **Run as Administrator**
+   <br> <img src="https://i0.wp.com/morgantechspace.com/wp-content/uploads/2021/09/powershell-run-as-administrator-1.png?w=973&ssl=1" width="400">
+2. **Paste** the following **command** and press **Enter**:
+   <br>
+   <br>
+   
+   `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+   <br>
+   <br>
 3. Type `Y` and press `Enter` if prompted to confirm.
+   <br>
+   <br>
 4. Close PowerShell.
 
 > **Why?** Without this change, Conda and many other tools will silently fail to activate environments or run scripts on Windows.
 
 ---
+
+<br>
 
 ## Section 2 — Downloads Checklist
 
@@ -92,12 +99,14 @@ Complete these downloads before starting any other step.
 
 Once Miniconda is intalled you will have a new application called **Anaconda Prompt** which looks like this:
 
-<img src="https://i.imgur.com/8wSNduI.png" alt="Anaconda Prompt" width="325">
+<img src="https://i.imgur.com/8wSNduI.png" alt="Anaconda Prompt" width="200">
 
 To build the `psychopy_env` workspace that we need for all scripts to run PsychoPy tasks we need to:
 
 1. Press `Win`, type **Anaconda Prompt**, and open it (same as in **section 1**).
-2. *Skip this step if your `psychopy_env.yml` is in the Downloads folder*. To change where **Anaconda Prompt** searches for the folder containing the saved`psychopy_env.yml`. Copy and paste the code below
+   <br>
+   <br>
+2. **Skip this step if your psychopy_env.yml is in the Downloads folder**. To change where **Anaconda Prompt** searches for the folder containing the saved`psychopy_env.yml`. Copy and paste the code below
 
 ```cmd
 cd %USERPROFILE%\
@@ -171,7 +180,7 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 [Learn Visual Studio Code in 15 minutes: 2026 Official Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=f8_uF_IDV50)
 
-### 4b. Installing Necessary Extension
+### 5b. Installing Necessary Extension
 
 As this tutorial works within the VS-Code enviroment,  we are going to need to install some extensions to run other types of files such as Jupyter Notebook files known to finish in `.ipynb`.
 
@@ -181,7 +190,7 @@ As this tutorial works within the VS-Code enviroment,  we are going to need to i
 4. 4.) Search for **GitHub Copilot Chat** (publisher: GitHub) and click **Install** <img src="https://i.imgur.com/hoa4FRQ.png" alt="GitHub Copilot Chat extension" width="325">
 5. 5.) Search for **Python** (publisher: Microsoft) and click **Install** <img src="https://i.imgur.com/72Eykhs.png" alt="Python extension" width="325">
 
-### 4c. Open the Protocol Folder
+### 5c. Open the Protocol Folder
 
 1. 1.) In VS Code, go to **File → Open Folder**.  You can find **"File"** on the top-left corner of VS-Code
 2. 2.) Navigate to Downloads Folder
