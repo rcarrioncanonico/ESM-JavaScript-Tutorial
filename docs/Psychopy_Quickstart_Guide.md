@@ -73,9 +73,12 @@ Complete these downloads before starting any other step.
 | 3 | **psychopy_env.yml** | [github.com/rcarrioncanonico/Momentary-Assesment-Tools](https://github.com/rcarrioncanonico/Momentary-Assesment-Tools/blob/main/psychopy_env.yml) | Click **Raw**, then `Ctrl+S` to save as `psychopy_env.yml` |
 | 4 | **Git** | [Git - Install](https://git-scm.com/install/) | Necessary to Push code to Pavlovia |
 
-> **Important:** During Git Installation there will be a window that will ask you to choose **the default editor used by Git** be sure to select Visual Studio Code just like in this image <img src="https://i.imgur.com/0J9Z70F.jpeg" alt="Git editor selection" width="325"> This is the only modification you have to do during installation.
-> 
-> **Important** During Miniconda Installation be sure to leave this box unchecked. <img src="https://i.imgur.com/wnWlWSU.png" alt="Miniconda installation checkbox" width="325">
+> **Important:** During Git Installation there will be a window that will ask you to choose a default editor, be sure to select Visual Studio Code just like in this image:<img src="https://i.imgur.com/0J9Z70F.jpeg" alt="Git editor selection" width="325"> This is the only modification you have to do during Git installation.
+
+> **Important:** During Miniconda Installation be sure to leave this box unchecked like in this image: <img src="https://i.imgur.com/wnWlWSU.png" alt="Miniconda installation checkbox" width="450">
+
+<br>
+<br>
 
 ### 2b. Necessary Accounts
 
@@ -85,11 +88,11 @@ Complete these downloads before starting any other step.
 | 6 | **Pavlovia account** | [pavlovia.org](https://pavlovia.org/) | Free for researchers |
 | 7 | **m-Path account** | [m-path.io](https://m-path.io/) | Coordinate with your supervisor |
 
-### 2c. Additional Program to see if the Psychopy Enviroment was Installed Correctly)
+### 2c. Additional Program;
 
 | # | What | Where to get it | Notes |
 |---|------|-----------------|-------|
-| 8 | **PsychoPy Standalone** | [psychopy.org/download.html](https://www.psychopy.org/download.html) | Recommended |
+| 8 | **PsychoPy Standalone** | [psychopy.org/download.html](https://www.psychopy.org/download.html) | Runs the experiment |
 
 ---
 
@@ -103,41 +106,36 @@ Once Miniconda is intalled you will have a new application called **Anaconda Pro
 
 To build the `psychopy_env` workspace that we need for all scripts to run PsychoPy tasks we need to:
 
-1. Press `Win`, type **Anaconda Prompt**, and open it (same as in **section 1**).
+1. Press `Win`, type **Anaconda Prompt**, and open it (similar to **section 1**).
    <br>
    <br>
-2. **Skip this step if your psychopy_env.yml is in the Downloads folder**. To change where **Anaconda Prompt** searches for the folder containing the saved`psychopy_env.yml`. Copy and paste the code below
+2. **Skip this step if your psychopy_env.yml is in the Downloads folder**. To change where **Anaconda Prompt** searches for the folder containing the saved psychopy_env.yml . Copy and paste the code below:
 
-```cmd
-cd %USERPROFILE%\
-          or if you have psychopy_env.yml saved in Documents
-cd %USERPROFILE\Documents
+<br>**cd %USERPROFILE%**
+
+3. Create the PsychoPy environment by running this code:
+   <br> <br>
+   **conda env create -f psychopy_env.yml**
+   <br> <br>
+4. This downloads and installs all required packages. It may take 5–15 minutes.
+   <br> <br>
+5. To confirm it succeeded — you should see a `psychopy_env` folder here:
+
 ```
+C:\Users\<YourName>\miniconda3\envs\psychopy_env\
+```
+<br>
 
-3. 3.) Create the PsychoPy environment by running this code:
-   
-   ```cmd
-   conda env create -f psychopy_env.yml
-   ```
-   
-   4.) This downloads and installs all required packages. It may take 5–15 minutes.
-4. 5.) To confirm it succeeded — you should see a `psychopy_env` folder here:
-   
-   ```
-   C:\Users\<YourName>\miniconda3\envs\psychopy_env\
-   ```
-   
-   6.) You can also check by running this code in **Anaconda Prompt**:
-   
-   ```cmd
-   conda env list
-   ```
-   
-   `psychopy_env` should appear in the list.
+6.) You can also check by running this code in **Anaconda Prompt**:
 
----
+**conda env list**
+
+
+`psychopy_env` should appear in the list.
 
 It will appear something like this: <img src="https://i.imgur.com/vvyGGit.png" alt="conda env list output" width="325">
+
+---
 
 ## Section 4 — GitHub Familiarization
 
@@ -151,27 +149,32 @@ There are different ways of saving (cloning) a repository into your computer. Th
 
 <img src="https://i.imgur.com/LpD6791.png" alt="GitHub download zip" width="325">
 
-Once the Zip file is download. You will find it in your files in "Downloads", hover the cursor on the zip file, *right click* and then *extract everything* and confirm extraction.
+Once the Zip file is download. You will find it in your files in "Downloads", hover the cursor on the zip file, *right click* and then click on *extract everything* and confirm extraction.
 
 A new folder with the same name of the zip file will be created, be sure to remember where it is located, which would be in the Downloads folder if you don´t decide to change its location.
 
-<img src="https://i.imgur.com/Lxs2qDJ.png" alt="Extracted folder" width="325">
+<img src="https://i.imgur.com/Lxs2qDJ.png" alt="Extracted folder" width="500">
 
 ## Recommended- Obtain Copilot Pro
 
 Coding has never been easier with the help of AI and students and teachers can get Copilot Pro for free for 2 years. Be sure to link your account to the GitHub Education benefits following the instructions of this [Link](https://github.com/settings/education/benefits).
 
-For now that is all you have to do in GitHub, but if you wish to know more about it, I recommend this quick 10 minute video to know more about.
+For now that is all you have to do in GitHub, but if you wish to know more about it, I recommend this quick 10 minute video to know more about GitHub.
 [How To Use GitHub For Beginners - YouTube](https://www.youtube.com/watch?v=a9u2yZvsqHA&t=325s)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Section 5 — VS Code Familiarization
 
 ### 5a. User Interface
 
 Just like GitHUb, VS-Code can be a little bit confusing and overwhelming as soon as you start it up, don´t worry the user-interface is pretty friendly once you get use to it.
-
 Since it is better to visualize someone using VS-Code rather than in text, I recommend you to watch the first 7 minutes of this video which explains the very initial steps of installing and opening VS-Code. These 7 minutes also explains the "Explorer" part of the "Activity Bar" of VS-Code.
-
 Be sure to have VS-Code open along these videos so you can familiarize yourself with the application.
 
 [VS Code for Absolute Beginners](https://www.youtube.com/watch?v=lWEKiak0WVU)
@@ -180,7 +183,7 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 [Learn Visual Studio Code in 15 minutes: 2026 Official Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=f8_uF_IDV50)
 
-### 5b. Installing Necessary Extension
+### 5b. Installing Necessary Extension and Linking GitHub.
 
 As this tutorial works within the VS-Code enviroment,  we are going to need to install some extensions to run other types of files such as Jupyter Notebook files known to finish in `.ipynb`.
 
@@ -190,6 +193,8 @@ As this tutorial works within the VS-Code enviroment,  we are going to need to i
 4. 4.) Search for **GitHub Copilot Chat** (publisher: GitHub) and click **Install** <img src="https://i.imgur.com/hoa4FRQ.png" alt="GitHub Copilot Chat extension" width="325">
 5. 5.) Search for **Python** (publisher: Microsoft) and click **Install** <img src="https://i.imgur.com/72Eykhs.png" alt="Python extension" width="325">
 
+On the "Activity Bar" on the left hand sight of VS-Code you will see an Icon with a cat on it, click on it and sign in with your Github account in order to sync VS-Code with Github and be able to use all of the AI pro tools. If you wish to know more about how GitHub works inside VS-Code you can check out this link: [Working with GitHub in VS Code](https://code.visualstudio.com/docs/sourcecontrol/github)
+
 ### 5c. Open the Protocol Folder
 
 1. 1.) In VS Code, go to **File → Open Folder**.  You can find **"File"** on the top-left corner of VS-Code
@@ -198,9 +203,9 @@ As this tutorial works within the VS-Code enviroment,  we are going to need to i
 4. 4.) Once selected, you will see all of the files of the repository  in the "Explorer" icon of the "Activity Bar" which is the "paper looking" icon on the left hand side of VS-Code.
 5. 
 
-Congratulations! you are free to explore the files of the repository inside VS-Code
+**Congratulations!** you are free to explore the files of the repository inside VS-Code. From now on this tutorial will take place inside VS-Code. All the files needed to continue were already open during section **5c**. Your next step is to open Jupyter_Starter file inside VS-Code.
 
-## Section 6 - Navigating Jupyter Notebook
+
 
 ```
 
