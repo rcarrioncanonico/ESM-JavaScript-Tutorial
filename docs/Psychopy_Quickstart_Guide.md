@@ -1,9 +1,9 @@
 # Quickstart Guide
 
-**EMA In-Lab Protocol — Tilburg University Lifespan Lab**
+**EMA In-Lab Protocol — Tilburg University**
 
 > **Who is this guide for?**
-> Students with little or no programming experience who need to set up and use
+> Students with little or no programming experience who need to set up and use 
 > PsychoPy-based cognitive tasks on a Windows PC. No prior coding knowledge is assumed.
 
 ---
@@ -14,9 +14,8 @@ This guide is organized into three levels.
 
 | Level | Goal | Steps to complete |
 |-------|------|-------------------|
-| **Level 1** | Powershell and Downloads | Sections 1 & 2
-| **Level 2** | Familiarizing with the new applications | Sections 3,  4, & 5|
-| **Level 3** | Using the VS-Code Enviroment | Sections 6 |
+| **Level 1** | Powershell and Downloads/Accounts | Sections 1 & 2|
+| **Level 2** | Familiarizing with applications | Sections 3,  4, & 5|
 
 ---
 
@@ -62,7 +61,7 @@ Windows blocks scripts by default. You must change this setting once before anyt
 
 ## Section 2 — Downloads Checklist
 
-Complete these downloads before starting any other step.
+Download and install these applications in order to get your computer ready for programming.
 
 ### 2a. Required for all levels
 
@@ -88,11 +87,11 @@ Complete these downloads before starting any other step.
 | 6 | **Pavlovia account** | [pavlovia.org](https://pavlovia.org/) | Free for researchers |
 | 7 | **m-Path account** | [m-path.io](https://m-path.io/) | Coordinate with your supervisor |
 
-### 2c. Additional Program;
+### 2c. Optional additional program:
 
 | # | What | Where to get it | Notes |
 |---|------|-----------------|-------|
-| 8 | **PsychoPy Standalone** | [psychopy.org/download.html](https://www.psychopy.org/download.html) | Runs the experiment |
+| 8 | **PsychoPy Standalone** | [psychopy.org/download.html](https://www.psychopy.org/download.html) | In-case you are curious how PsychoPy looks like|
 
 ---
 
