@@ -4,11 +4,16 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+        "denoland.vscode-deno"
       ],
       "settings": {
         "deno.enable": true,
-        "deno.lint": true
+        "deno.lint": true,
+        "[python]": {
+          "defaultInterpreterPath": "${workspaceFolder}/.deno/bin/deno",
+          "formatting.provider": "none"
+        }
       }
     }
   },
