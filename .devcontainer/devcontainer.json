@@ -4,19 +4,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-toolsai.jupyter",
-        "denoland.vscode-deno"
+        "ms-toolsai.jupyter"
       ],
       "settings": {
         "deno.enable": true,
-        "deno.lint": true,
-        "[python]": {
-          "defaultInterpreterPath": "${workspaceFolder}/.deno/bin/deno",
-          "formatting.provider": "none"
-        }
+        "deno.lint": true
       }
     }
   },
-  "postCreateCommand": "deno jupyter --install && deno run --allow-net --allow-read https://deno.land/std@0.190.0/http/file_server.ts --port 8080 &"
+  "postCreateCommand": "deno jupyter --install"
   
 }
