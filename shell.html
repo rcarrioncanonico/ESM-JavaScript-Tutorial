@@ -28,8 +28,8 @@
 
         // Preferred transport: notebook opens shell.html, receives READY, then posts RUN_TASK.
         window.addEventListener("message", (event) => {
-            if (event.origin !== stageOrigin) return;
             if (!event.data || event.data.type !== "RUN_TASK") return;
+            if (window.opener && event.source !== window.opener) return;
             if (event.source && typeof event.source.postMessage === "function") {
                 try {
                     event.source.postMessage({ type: "SHELL_ACK" }, event.origin);
