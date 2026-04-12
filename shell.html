@@ -30,12 +30,20 @@
         window.addEventListener("message", (event) => {
             if (event.origin !== stageOrigin) return;
             if (!event.data || event.data.type !== "RUN_TASK") return;
+            if (event.source && typeof event.source.postMessage === "function") {
+                try {
+                    event.source.postMessage({ type: "SHELL_ACK" }, event.origin);
+                } catch (_e) {
+                    // Ignore ACK failures and continue executing payload.
+                }
+            }
             runStudentCode(event.data.code);
         });
 
         if (window.opener && !window.opener.closed) {
             try {
-                window.opener.postMessage({ type: "SHELL_READY" }, stageOrigin);
+                // Use wildcard target since opener can be notebook output origin, not stage origin.
+                window.opener.postMessage({ type: "SHELL_READY" }, "*");
             } catch (_e) {
                 // Ignore opener messaging failures and continue.
             }
