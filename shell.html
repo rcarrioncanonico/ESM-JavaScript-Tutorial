@@ -7,8 +7,6 @@
 <body style="margin:0; background:#222; overflow:hidden; display:flex; justify-content:center; align-items:center; height:100vh;">
     <div id="phaser-game"></div>
     <script>
-        const stageOrigin = window.location.origin;
-
         function showMessage(message, color) {
             document.body.innerHTML = `<h1 style="color:${color}; font-family:sans-serif;">${message}</h1>`;
         }
@@ -29,10 +27,9 @@
         // Preferred transport: notebook opens shell.html, receives READY, then posts RUN_TASK.
         window.addEventListener("message", (event) => {
             if (!event.data || event.data.type !== "RUN_TASK") return;
-            if (window.opener && event.source !== window.opener) return;
             if (event.source && typeof event.source.postMessage === "function") {
                 try {
-                    event.source.postMessage({ type: "SHELL_ACK" }, event.origin);
+                    event.source.postMessage({ type: "SHELL_ACK" }, "*");
                 } catch (_e) {
                     // Ignore ACK failures and continue executing payload.
                 }
@@ -41,12 +38,20 @@
         });
 
         if (window.opener && !window.opener.closed) {
-            try {
-                // Use wildcard target since opener can be notebook output origin, not stage origin.
-                window.opener.postMessage({ type: "SHELL_READY" }, "*");
-            } catch (_e) {
-                // Ignore opener messaging failures and continue.
-            }
+            let readyTries = 0;
+            const readyTimer = setInterval(() => {
+                readyTries += 1;
+                try {
+                    // Use wildcard target since opener origin can differ in notebook contexts.
+                    window.opener.postMessage({ type: "SHELL_READY" }, "*");
+                } catch (_e) {
+                    // Ignore opener messaging failures and continue retrying.
+                }
+
+                if (readyTries >= 20) {
+                    clearInterval(readyTimer);
+                }
+            }, 250);
         }
 
         // Legacy fallback: still support code in URL during migration.
