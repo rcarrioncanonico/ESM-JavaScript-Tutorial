@@ -9,9 +9,29 @@
     <script>
         // 2. Look for the "code" inside the URL hash first (safer for longer payloads),
         // then fall back to query params for backward compatibility.
-        const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-        const queryParams = new URLSearchParams(window.location.search);
-        const studentCode = hashParams.get('code') || queryParams.get('code');
+        const rawHash = window.location.hash || '';
+        const hashCode = rawHash.startsWith('#code=') ? rawHash.slice(6) : null;
+        const queryCode = new URLSearchParams(window.location.search).get('code');
+
+        let studentCode = hashCode !== null ? hashCode : queryCode;
+
+        // Hash payload is percent-encoded by play(taskCode); decode it.
+        if (hashCode !== null && typeof studentCode === 'string') {
+            try {
+                studentCode = decodeURIComponent(studentCode);
+            } catch (_e) {
+                // Keep original string; eval will surface a meaningful syntax error.
+            }
+        }
+
+        // Safety: if still percent-encoded, try one more decode pass.
+        if (typeof studentCode === 'string' && /%[0-9A-Fa-f]{2}/.test(studentCode)) {
+            try {
+                studentCode = decodeURIComponent(studentCode);
+            } catch (_e) {
+                // Ignore decode failure and continue with best-effort payload.
+            }
+        }
         
         if (studentCode) {
             try {
