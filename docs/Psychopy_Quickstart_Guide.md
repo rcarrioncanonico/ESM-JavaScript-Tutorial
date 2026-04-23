@@ -1,4 +1,4 @@
-# Quickstart Guide
+#Quickstart Guide
 
 **EMA In-Lab Protocol — Tilburg University**
 
@@ -35,22 +35,33 @@
 
 Before you can start using an existing task in Pavlovia, you need to create an account. You can create an account [here](https://gitlab.pavlovia.org/users/sign_up). Be sure to use your **university email**, as this will grant you a free license for Pavlovia. During account creation, they will ask for your **role** and **purpose** for using Pavlovia. We recommend **Data Analyst** and **Using Git**, but feel free to choose what fits best.
 
+### Gitlap vs Pavlovia
+
+Before we get started it is important to know the difference between GitLab and Pavlovia. These are two different websites which shares the same account we just created in the step above.
+
+[Pavlovia](https://pavlovia.org/#main) provides the interface to manage participants, assign credits and launch studies. It mainly acts as a dashboard to have a holistic view for the management of your experiment. Is the "storefront" and the execution server where partiicpants actually interact with the experiment.
+
+[GitLab](https://gitlab.pavlovia.org/) acts as the backend for Pavlovia. Every Pavlovia experiment is a Git repository. In simple words, GitLab acts as "storehouse" of code and data. Each experiment in Pavlovia has a repository (container/place) in GitLap. It is here were we are going to **fork** projects and get the code for editing.
+
 ### Pavlovia Tour
 
-On the main page of Pavlovia, you will see different tabs. **Docs** is the documentation site where you can find more information about the platform and how to use it. **Explore** contains all experiments that have been uploaded to Pavlovia. These experiments are free to **fork**, which means creating a copy that you can use as your own. In **Dashboard**, you can see your profile and manage your experiments. Finally, in the **Store**, you will find Pavlovia merchandise and services.
+On the main page of [Pavlovia](https://pavlovia.org/#main), you will see different tabs. **Docs** is the documentation site where you can find more information about the platform and how to use it. **Explore** contains all experiments that have been uploaded to Pavlovia. These experiments are free to **fork**, which means creating a copy that you can use as your own. In **Dashboard**, you can see your profile and manage your experiments. Finally, in the **Store**, you will find Pavlovia merchandise and services.
 
 ### Using Existing Task
 
 In the previous section, we touched on **forking**. By doing a **fork**, we essentially copy the **repository** (a folder with all the experiment contents), which allows us to make changes to the **code** without affecting the original project.
 
 To fork a project, go to Explore and look up an experiment you want to copy. For simplicity, in this tutorial we will look at the Featured Experiments. Here you can find a task named "antisaccade". Hover your mouse over the experiment and click on "view code." It should look like this:
-<img src="https://i.ibb.co/HftB2VYr/Captura-de-pantalla-2026-03-22-101928.png" alt="Captura-de-pantalla-2026-03-22-101928" width ="200" >
 
-This will direct you to the repository page of the experiment. In this repository, you will find all the files that make up the experiment. Here, you will want to "fork" the repository. You can do this by clicking on "Forks."
+<img src="https://i.ibb.co/pjBX5gjd/Captura-de-pantalla-2026-04-22-161126.png" alt="Captura-de-pantalla-2026-04-22-161126" border="0" width = 200>
+
+This will redirect you to the repository page of the experiment, in other words, it has redirect you to GitLap. In this repository, you will find all the files that make up the experiment. Here, you will want to "fork" the repository. You can do this by clicking on "Forks."
 
 <img src="https://i.ibb.co/PGkvQvc3/Captura-de-pantalla-2026-03-22-103246.png" alt="Captura-de-pantalla-2026-03-22-103246" ></a>
 
-Once clicked, it will redirect you to the "Fork Project" page. Here, you can leave things as they are or change the project name to whatever you want. For this tutorial, I will change the name to "my first data." It is also necessary to select a "Namespace"; in this case, it will be your username. Then click on "Fork Project."
+Once clicked, it will redirect you to the "Fork Project" page. Here, you can leave things as they are or change the project name to whatever you want. For this tutorial, I will change the name to "my first data." It is also necessary to select a "Namespace"; in this case, it will be your username. Then click on "Fork Project." You can check that you are on the right place if you have a page similar to this.
+
+<img src="https://i.ibb.co/2YNqddg9/Captura-de-pantalla-2026-04-22-162144.png" alt="Captura-de-pantalla-2026-04-22-162144" width = 400 >
 
 This will lead you to the GitLab project overview page. There is nothing to do here. To get your experiment up and running, go back to the dashboard at Pavlovia.org. You can click [here](https://pavlovia.org/dashboard?tab=1) to be redirected to the dashboard.
 
@@ -58,7 +69,7 @@ You will see that your experiment is "inactive." Before you can collect data, yo
 
 To change the status of your experiment, click on the row where your experiment appears, like this:
 
-<img src="https://i.ibb.co/TDY5tqm5/Captura-de-pantalla-2026-03-22-105306.png" alt="Captura-de-pantalla-2026-03-22-105306">
+<img src="https://i.ibb.co/d4HnfWzC/Captura-de-pantalla-2026-04-22-163331.png" alt="Captura-de-pantalla-2026-04-22-163331" border="0" /></a>
 
 After you click this, a page will appear with the option to change the status of your experiment to "Running." Once you click on "Running," the status will change. There will also be a URL, as highlighted in the image below. You can send this URL to your participants to gather data.
 
@@ -69,7 +80,7 @@ After you click this, a page will appear with the option to change the status of
 Once the participant finishes the task, the data is stored in your repository. You can access this data in two ways:
 
 * **Download Button:** On your experiment page, click the **"Download Results"** button to get a ZIP file containing all individual CSV or JSON files.
-* **[GitLab](https://gitlab.pavlovia.org/)** **(Recommended)** Alternatively, you can find the data in the folder within your experiment's GitLab repository (click on the project to view all files in the repository). The folder is named "data."
+* **[GitLab](https://gitlab.pavlovia.org/)** Alternatively, you can find the data in the folder within your experiment's GitLab repository (click on the project to view all files in the repository). The folder is named "data."
 
 Since we forked another person's repository, we also copied all previously collected data. Therefore, the "data" folder in your GitLab repository, or in your ZIP file, contains earlier data as well. To find the latest addition to your data folder, check "Last commit" and click on the file to view the data.
 <img src="https://i.ibb.co/Xfwz1P27/Captura-de-pantalla-2026-03-22-184826.png" alt="Captura-de-pantalla-2026-03-22-184826" border="0">
@@ -77,6 +88,21 @@ Since we forked another person's repository, we also copied all previously colle
 **Congratulations** you now know how to use existing tasks in Pavlovia to create your own forked repository, administer tasks via URL, and access the data gathered by your task.
 
 ---
+
+# Using the ESM Task
+
+Now that you have an idea on how Pavlovia and GitLab works, its time to use the existing ESM task for data collection.
+
+The process is simple. First request access to the repository with the already existing code. If you have access to the repository from your supervisor account you can send yourself and invite. First go to the overview board, [Projects · GitLab](https://gitlab.pavlovia.org/), click on the project you want to be part of. Once there go to management --> memebers --> Invite members
+
+<img src="https://i.ibb.co/nsNcH9cM/Captura-de-pantalla-2026-04-22-172143.png" alt="Captura-de-pantalla-2026-04-22-172143" border="0" /></a>
+
+Next fill in your username, select the role of reporter and discuss with your supervisor the access time granted for your in this repository, preferably before data collection starts.
+
+<img src="https://i.ibb.co/MFMYND5/Captura-de-pantalla-2026-04-22-172405.png" alt="Captura-de-pantalla-2026-04-22-172405" border="0" /></a>
+
+Once this is done the project will appear on your overview board [Projects · GitLab](https://gitlab.pavlovia.org/), and will be ready to fork.
+
 # Adjusting an Existing Task
 
 Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. To do so you will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
@@ -93,7 +119,7 @@ To access the Github Codespace you will need a Github account, you can create on
 
 <img src="https://i.ibb.co/mV5V3yK9/Captura-de-pantalla-2026-03-27-172751.png" alt="Captura-de-pantalla-2026-03-27-172751" border="0" /></a>
 
-Once you click on "Open in a codespace" it will take a few seconds to load and then you will be able to see the VS-Code interface with all the files of the repository.For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. 
+Once you click on "Open in a codespace" it will take a few seconds to load and then you will be able to see the VS-Code interface with all the files of the repository.For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript.
 
 It is important to know that changes done in your own codespace will be saved in your own workspace and will not affect the original repository. This means that you can make changes to the code without worrying about breaking anything for other people. Just be sure to not eliminate your codespace, if you do so, all the changes you made will be lost and you will have to create a new codespace and start from scratch.
 
@@ -110,8 +136,6 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 [Learn Visual Studio Code in 15 minutes: 2026 Official Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=f8_uF_IDV50)
 
-
-
 ## The Big Picture: How the Tools Connect
 
 <img src="https://i.ibb.co/sJHJQQXd/Gemini-Generated-Image-1q3pmk1q3pmk1q3p.png" alt="Gemini-Generated-Image-1q3pmk1q3pmk1q3p" border="0" width ="650">
@@ -125,6 +149,7 @@ Another recommended video is the following, in which the first 12 minutes are en
 | **m-Path** | Sends scheduled notifications to participants and links them to Pavlovia |
 
 ---
+
 ## Section 2 — Downloads Checklist
 
 Download and install these applications in order to get your computer ready for programming.
