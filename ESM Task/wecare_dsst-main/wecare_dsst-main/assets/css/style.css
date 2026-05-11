@@ -1,0 +1,36 @@
+/* Define in :root (global scope) */  
+:root {  
+  --primary-color: #d4aa55;
+  --secondary-color: #213e60;
+  --text-dark-color: #131f2e;
+  --text-light-color: #f2f2f2;   
+  --body-font-size: 20px;
+  --header-font-size: 24px;  
+} 
+
+/* reset CSS for game container*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Font for regular text, normal weight */
+@font-face {
+  font-family: "body";
+  src: url("../fonts/Lexend-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Font for titles and buttons, bold weight */
+@font-face {
+  font-family: "header";
+  src: url("../fonts/Lexend-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

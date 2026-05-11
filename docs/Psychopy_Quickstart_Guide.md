@@ -1,4 +1,4 @@
-#Quickstart Guide
+# Quickstart Guide
 
 **EMA In-Lab Protocol — Tilburg University**
 
@@ -103,6 +103,18 @@ Next fill in your username, select the role of reporter and discuss with your su
 
 Once this is done the project will appear on your overview board [Projects · GitLab](https://gitlab.pavlovia.org/), and will be ready to fork.
 
+# ESM task blueprint
+
+This ESM task was primarily built with a gamified theme in mind, and that is reflected in both the code and the aesthetic of the task. It is important to know that this is just one of many ways to build your own ESM task. To build this web-based experiment, three languages work together — much like building a house, where each material serves a distinct purpose and the house only stands when all three work together.
+
+**HTML (The Skeleton/Structure):** Just as a house needs a frame and walls to define its shape, the `index.html` file creates the basic structure of the webpage where the experiment lives. It defines where things go, but not what they look like or how they behave. *Students rarely need to touch this.*
+
+**CSS (The Paint/Design):** Once the frame is up, you paint the walls and choose the finishes. Found in `style.css`, CSS controls the visual appearance — colors, font sizes, and spacing. *Students rarely need to touch this.*
+
+**JavaScript (The Brains/Wiring):** This is what makes the house actually livable. Flip a switch and the lights come on; click a button and something happens. Found in the `src` folder, JavaScript controls the game logic, saves the data, and moves the participant from one screen to the next. **This is where we make adjustments to the experiment.**
+
+Just as you wouldn't rewire a house without knowing what you're doing, there are parts of the JavaScript we will learn to recognize but leave untouched. The goal of this tutorial is to give you just enough knowledge to confidently make the changes that matter — without accidentally cutting the wrong wire.
+
 # Adjusting an Existing Task
 
 Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. To do so you will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
@@ -135,6 +147,10 @@ Alternatively, I recommend you to watch the first 7 minutes of this video which 
 Another recommended video is the following, in which the first 12 minutes are enough for you to know the other functions such as extensions and the use of Copilot AI.
 
 [Learn Visual Studio Code in 15 minutes: 2026 Official Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=f8_uF_IDV50)
+
+# JavaScript Lessons
+
+Before you go into editing the source code of the ESM tasks
 
 ## The Big Picture: How the Tools Connect
 

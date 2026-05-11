@@ -1,0 +1,7 @@
+{
+    "start_message": "Het is je gelukt!\n\nJe hebt de geheime sleutel gevonden.\n\nNu moet je de kluis nog zien te kraken...\n\nDruk snel op de knop, dan krijg je de uitleg te zien.",
+    "practice_message": "Goed gedaan!\n\nMaar, zo makkelijk krijg je de kluis niet open...\n\nDe getallen zijn nu vervangen door symbolen.\n\nGa snel door naar de nieuwe uitleg.",
+    "run_message": "Nu ben je er klaar voor!\n\nToets in 1 minuut zo vaak mogelijk het getal aan dat past bij het symbool.\n\nDruk op start om te beginnen.",
+    "baseline_instruction": "bovenin komt een getal, druk daarna de goede knop in",
+    "practice_instruction": "bovenin komt een symbool, zoek het passende getal, druk daarna de goede knop in"
+}

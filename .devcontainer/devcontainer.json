@@ -1,7 +1,7 @@
 {
   "name": "Cognitive ESM Lab (JS + Phaser)",
   "image": "denoland/deno:latest",
-  "forwardPorts": [8080], 
+  "forwardPorts": [5500], 
   "customizations": {
     "vscode": {
       "extensions": [
