@@ -5,7 +5,8 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-toolsai.jupyter"
+        "ms-toolsai.jupyter",
+         "ritwickdey.LiveServer"
       ],
       "settings": {
         "deno.enable": true,
