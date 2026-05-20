@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        
+        <!-- Title and icon shown in browser tab -->
+        <link rel="icon" type="image/png" href="assets/images/favicon-48.png" />
+        <title>Cognitive EMA</title>
+
+        <!-- Include Libraries -->
+        <script src="src/libs/phaser.min.js"></script>
+        <script src="src/libs/jspsych-7.1.2/jspsych.js"></script>
+        <script type="text/javascript" src="src/libs/jspsych-7-pavlovia-2022.1.1.js"></script>
+
+        <!-- Include CSS style -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+    </head>
+
+    <body>
+        <!-- Preload the fonts for phaser to use -->
+        <div style="font-family:body; position:absolute; left:-1000px; visibility:hidden;">.</div>
+        <div style="font-family:header; position:absolute; left:-1000px; visibility:hidden;">.</div>
+        
+        <!-- Container which holds the game -->
+        <div id="game-container"></div>
+        
+        <!-- Configure jspsych for collecting data -->
+        <script> 
+            const jsPsych = initJsPsych();
+        </script>
+
+        <!-- Load main game script -->
+        <script type="module" src="src/main.js"></script>
+    </body>
+</html>
