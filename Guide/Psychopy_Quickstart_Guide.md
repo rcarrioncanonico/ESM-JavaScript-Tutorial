@@ -35,7 +35,7 @@
 
 Before you can start using an existing task in Pavlovia, you need to create an account. You can create an account [here](https://gitlab.pavlovia.org/users/sign_up). Be sure to use your **university email**, as this will grant you a free license for Pavlovia. During account creation, they will ask for your **role** and **purpose** for using Pavlovia. We recommend **Data Analyst** and **Using Git**, but feel free to choose what fits best.
 
-### Gitlap vs Pavlovia
+### Gitlab vs Pavlovia
 
 Before we get started it is important to know the difference between GitLab and Pavlovia. These are two different websites which shares the same account we just created in the step above.
 
@@ -117,21 +117,21 @@ Just as you wouldn't rewire a house without knowing what you're doing, there are
 
 # Adjusting an Existing Task
 
-Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. To do so you will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
+Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. To do so you will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. It is also important to learn some JavaScript concepts, which can also be found inside the Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
 
 ## Accessing Github Codespace
 
 Github CodeSpace is a cloud-based, customizable development enviroment (IDE) that allows people to build, code and debug projects in their browser, VS-Code or VS-code in the browser, without the need to download anything. It provides a pre-configured virtual machine that runs in the cloud.
 
-In this tutorial we are going to use Github Codespace which has already been configure as a VS-Code interface with a Jupyter Notebook extension and a Deno kernel which will allows us to code using JavaScript inside Jupyter Notebook.
+In this tutorial we are going to use Github Codespace which has already been configure as a VS-Code interface with a Jupyter Notebook, a Live Server extension and a Deno kernel which will allows us to code using JavaScript inside Jupyter Notebook.
 
-If this sounds a bit confusing it is because it is. We are essentially have a browser tab which is a virtual machine running in a cloud that has all the tools for ESM task creation and modification.
+We are essentially have a browser tab which is a virtual machine running in a cloud that has all the tools for ESM task creation and modification.
 
 To access the Github Codespace you will need a Github account, you can create one [here](https://github.com/). Once you have your account you can click on this [repository](https://github.com/rcarrioncanonico/ESM-JavaScript-Tutorial) to go to this tutorials repository. You will have to go to the **Green Box** where it says **Use this template**, click on it, click on **Open in a codespace** and then click on just like in the image below:
 
 <img src="https://i.ibb.co/mV5V3yK9/Captura-de-pantalla-2026-03-27-172751.png" alt="Captura-de-pantalla-2026-03-27-172751" border="0" /></a>
 
-Once you click on "Open in a codespace" it will take a few seconds to load and then you will be able to see the VS-Code interface with all the files of the repository.For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript.
+Once you click on "Open in a codespace" it will take a few minutes to load all the necessary things and then you will be able to see the VS-Code interface with all the files of the repository. For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. The file can be found in the Explorer Panel
 
 It is important to know that changes done in your own codespace will be saved in your own workspace and will not affect the original repository. This means that you can make changes to the code without worrying about breaking anything for other people. Just be sure to not eliminate your codespace, if you do so, all the changes you made will be lost and you will have to create a new codespace and start from scratch.
 
@@ -150,11 +150,11 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 # JavaScript Lessons
 
-Before you go into editing the source code of the ESM tasks
+Once you finish the introduction to Jupyter Notebook (File = Jupyter_Starter.ipynb) it is important to complete all the JavaScript lessons found in the folder "JS Lessons"
 
 ## The Big Picture: How the Tools Connect
 
-<img src="https://i.ibb.co/sJHJQQXd/Gemini-Generated-Image-1q3pmk1q3pmk1q3p.png" alt="Gemini-Generated-Image-1q3pmk1q3pmk1q3p" border="0" width ="650">
+<img src="https://i.ibb.co/39LZvMqc/Gemini-Generated-Image-86xxlo86xxlo86xx.png" alt="Gemini-Generated-Image-86xxlo86xxlo86xx" border="0" /></a>
 
 | Tool | What it does |
 |------|--------------|
@@ -194,75 +194,6 @@ Download and install these applications in order to get your computer ready for 
 
 ---
 
-## Section 4: GitHub Familiarization
-
-Like anything new, GitHub looks scary and contains a lot of new terminology which we are not use to. Terms like **"Repositories"**, **"Commit"**, **"Pull Requests"** and **"Branch"** are common terms in the GitHub community
-
-You have access to this document through the public *repository* known as `EMA-In-Lab-Protocol` ([Link](https://github.com/rcarrioncanonico/EMA-In-Lab-Protocol)). A *repository* is nothing more than a *big folder* which was uploaded to the cloud in GitHub. It contains different files such as this PDF document, other file types such as jupyter notebook files (.ipynb), python files (.py) and can also contain even more folders inside of it.
-
-As you can see the `EMA-In-Lab-Protocol` has a lot of different files in it. This Quick Guide PDF was just one of those files inside that repository. In order to use this protocol we will want to clone (download) the whole repository into your computer.
-
-There are different ways of saving (cloning) a repository into your computer. The simplest way of doing that is to go to the **"Green Box** that has **"Code** written on it, **click** on it and **click** **Download Zip**
-
-<img src="https://i.imgur.com/LpD6791.png" alt="GitHub download zip" width="325">
-
-Once the Zip file is download. You will find it in your files in "Downloads", hover the cursor on the zip file, *right click* and then click on *extract everything* and confirm extraction.
-
-A new folder with the same name of the zip file will be created, be sure to remember where it is located, which would be in the Downloads folder if you don´t decide to change its location.
-
-<img src="https://i.imgur.com/Lxs2qDJ.png" alt="Extracted folder" width="500">
-
-## Recommended- Obtain Copilot Pro
-
-Coding has never been easier with the help of AI and students and teachers can get Copilot Pro for free for 2 years. Be sure to link your account to the GitHub Education benefits following the instructions of this [Link](https://github.com/settings/education/benefits).
-
-For now that is all you have to do in GitHub, but if you wish to know more about it, I recommend this quick 10 minute video to know more about GitHub.
-[How To Use GitHub For Beginners - YouTube](https://www.youtube.com/watch?v=a9u2yZvsqHA&t=325s)
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-## Section 5 — VS Code Familiarization
-
-### 5a. User Interface
-
-Just like GitHUb, VS-Code can be a little bit confusing and overwhelming as soon as you start it up, don´t worry the user-interface is pretty friendly once you get use to it.
-Since it is better to visualize someone using VS-Code rather than in text, I recommend you to watch the first 7 minutes of this video which explains the very initial steps of installing and opening VS-Code. These 7 minutes also explains the "Explorer" part of the "Activity Bar" of VS-Code.
-Be sure to have VS-Code open along these videos so you can familiarize yourself with the application.
-
-[VS Code for Absolute Beginners](https://www.youtube.com/watch?v=lWEKiak0WVU)
-
-Another recommended video is the following, in which the first 12 minutes are enough for you to know the other functions such as extensions and the use of Copilot AI.
-
-[Learn Visual Studio Code in 15 minutes: 2026 Official Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=f8_uF_IDV50)
-
-### 5b. Installing Necessary Extension and Linking GitHub.
-
-As this tutorial works within the VS-Code enviroment,  we are going to need to install some extensions to run other types of files such as Jupyter Notebook files known to finish in `.ipynb`.
-
-1. 1.) Open VS Code.
-2. 2.) Click the **Extensions** icon in the left sidebar (it looks like four squares, or press `Ctrl+Shift+X`).
-3. 3.) Search for **Jupyter** (publisher: Microsoft) and click **Install**. <img src="https://i.imgur.com/qaoIv07.png" alt="Jupyter extension" width="325">
-4. 4.) Search for **GitHub Copilot Chat** (publisher: GitHub) and click **Install** <img src="https://i.imgur.com/hoa4FRQ.png" alt="GitHub Copilot Chat extension" width="325">
-5. 5.) Search for **Python** (publisher: Microsoft) and click **Install** <img src="https://i.imgur.com/72Eykhs.png" alt="Python extension" width="325">
-
-On the "Activity Bar" on the left hand sight of VS-Code you will see an Icon with a cat on it, click on it and sign in with your Github account in order to sync VS-Code with Github and be able to use all of the AI pro tools. If you wish to know more about how GitHub works inside VS-Code you can check out this link: [Working with GitHub in VS Code](https://code.visualstudio.com/docs/sourcecontrol/github)
-
-### 5c. Open the Protocol Folder
-
-1. 1.) In VS Code, go to **File --> Open Folder**.  You can find **"File"** on the top-left corner of VS-Code
-2. 2.) Navigate to Downloads Folder
-3. 3.) **Select** the folder known as `EMA-In-Lab-Protocol-main` (the one we downloaded and extracted in **Section 4**. <img src="https://i.imgur.com/A9dIqrg.png" alt="Folder selection" width="325">
-4. 4.) Once selected, you will see all of the files of the repository  in the "Explorer" icon of the "Activity Bar" which is the "paper looking" icon on the left hand side of VS-Code.
-5. 
-
-**Congratulations!** you are free to explore the files of the repository inside VS-Code. From now on this tutorial will take place inside VS-Code. All the files needed to continue were already open during section **5c**. Your next step is to open Jupyter_Starter file inside VS-Code.
 
 ​
 
