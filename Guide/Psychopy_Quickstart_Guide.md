@@ -27,6 +27,16 @@
 
 ---
 
+## The Big Picture: How the Tools Connect
+
+<img src="https://i.ibb.co/39LZvMqc/Gemini-Generated-Image-86xxlo86xxlo86xx.png" alt="Gemini-Generated-Image-86xxlo86xxlo86xx" border="0" /></a>
+
+
+
+---
+
+
+
 ## Using Pavlovia & Existing Task
 
 ---
@@ -150,19 +160,8 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 # JavaScript Lessons
 
-Once you finish the introduction to Jupyter Notebook (File = Jupyter_Starter.ipynb) it is important to complete all the JavaScript lessons found in the folder "JS Lessons"
+Once you finish the introduction to Jupyter Notebook (File = Jupyter_Starter.ipynb) it is important to complete all the JavaScript lessons found in the folder "JS Lessons" in order to understand what are we editing, be sure to also read all the documentation per lesson in the file called "More_Info_Java" you will find a link to every necessary concept for editing and creating tasks.
 
-## The Big Picture: How the Tools Connect
-
-<img src="https://i.ibb.co/39LZvMqc/Gemini-Generated-Image-86xxlo86xxlo86xx.png" alt="Gemini-Generated-Image-86xxlo86xxlo86xx" border="0" /></a>
-
-| Tool | What it does |
-|------|--------------|
-| **Docker Desktop** |Makes it possible to run PsychoPy tasks|
-| **VS Code** | Code editor where you read, edit, and run experiment scripts |
-| **PsychoPy** | The Python library that actually runs cognitive tasks |
-| **Pavlovia** | Hosts the web version of tasks so participants can do them on a phone |
-| **m-Path** | Sends scheduled notifications to participants and links them to Pavlovia |
 
 ---
 
