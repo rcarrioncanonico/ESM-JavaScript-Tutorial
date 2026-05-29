@@ -31,11 +31,14 @@
 
 <img src="https://i.ibb.co/39LZvMqc/Gemini-Generated-Image-86xxlo86xxlo86xx.png" alt="Gemini-Generated-Image-86xxlo86xxlo86xx" border="0" /></a>
 
-
+| # | What | Where to get it | Notes |
+|---|------|-----------------|-------|
+| 1 | **Git** | [Git - Install](https://git-scm.com/install/) | Necessary to Push code to Pavlovia |
+| 2 | **Codespace** | Link | Allows Code Editing |
+| 3 | **Pavlovia** | Link | Hosts ESM Task & Collects Data
+| 4 | **m-Path** | Link | Necessary for Scheduled Notification |
 
 ---
-
-
 
 ## Using Pavlovia & Existing Task
 
@@ -113,6 +116,8 @@ Next fill in your username, select the role of reporter and discuss with your su
 
 Once this is done the project will appear on your overview board [Projects · GitLab](https://gitlab.pavlovia.org/), and will be ready to fork.
 
+<img src="https://i.ibb.co/mrYwjTwz/Captura-de-pantalla-2026-05-29-160631.png" alt="Captura-de-pantalla-2026-05-29-160631" border="0" /></a>
+
 # ESM task blueprint
 
 This ESM task was primarily built with a gamified theme in mind, and that is reflected in both the code and the aesthetic of the task. It is important to know that this is just one of many ways to build your own ESM task. To build this web-based experiment, three languages work together — much like building a house, where each material serves a distinct purpose and the house only stands when all three work together.
@@ -141,11 +146,11 @@ To access the Github Codespace you will need a Github account, you can create on
 
 <img src="https://i.ibb.co/mV5V3yK9/Captura-de-pantalla-2026-03-27-172751.png" alt="Captura-de-pantalla-2026-03-27-172751" border="0" /></a>
 
-Once you click on "Open in a codespace" it will take a few minutes to load all the necessary things and then you will be able to see the VS-Code interface with all the files of the repository. For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. The file can be found in the Explorer Panel
+Once you click on "Open in a codespace" it will take a few minutes to load all the necessary things and then you will be able to see the VS-Code interface with all the files of the repository. For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. The file can be found in the Explorer Panel in the folder called "1 First Folder to Open".
 
 It is important to know that changes done in your own codespace will be saved in your own workspace and will not affect the original repository. This means that you can make changes to the code without worrying about breaking anything for other people. Just be sure to not eliminate your codespace, if you do so, all the changes you made will be lost and you will have to create a new codespace and start from scratch.
 
-Alternatively you can fork this repository, similarly to what we did in Pavlovia, and then open the codespace from your own repository, this way you can have a copy of the code in your own repository and you can also make changes to it without worrying about losing it. To do this, you can follow the same steps as before but instead of clicking on "Open in a codespace" you will click on "create new repository" and then follow the same steps as before.
+Alternatively you can fork the repository, similarly to what we did in Pavlovia, and then open the codespace from your own repository, this way you can have a copy of the code in your own repository and you can also make changes to it without worrying about losing it. This will come in handy if you want to save changes to an already existing task such as the DSST.  To do this, you can follow the same steps as before but instead of clicking on "Open in a codespace" you will click on "create new repository" and then follow the same steps done to open your fork repository in Codespace.
 
 If you are overwhelmed by the VS-Code interface here is an image with the labels of the most important parts of the interface.
 
@@ -160,10 +165,35 @@ Another recommended video is the following, in which the first 12 minutes are en
 
 # JavaScript Lessons
 
-Once you finish the introduction to Jupyter Notebook (File = Jupyter_Starter.ipynb) it is important to complete all the JavaScript lessons found in the folder "JS Lessons" in order to understand what are we editing, be sure to also read all the documentation per lesson in the file called "More_Info_Java" you will find a link to every necessary concept for editing and creating tasks.
+In the Codespace you will find also find a folder called "JS Lessons". Open this after you have finish with the introduction to Jupyter Notebook. Before every lesson it is important for you to read the documentation of each concept and then work on the Jupyter files. The links for each concept can be found in the same folder in the file known as "More_Info_Java".
 
+It is important to complete all the JavaScript lessons found in the folder "JS Lessons" in order to understand what are we editing.
+
+## Editing Digit Symbol Substitution Test.
+
+Now that you´ve gained some knowledge of JavaScript it will be possible to be able to edit the Digit Symbol Substitution Test (DSST).  In the "ESM Task" folder you will find two sub-folders. The first folder "Information_dsst_task" contains a video and a document that will help you understand
+
+## How to edit the other cognitive tasks?
+
+Since the [ESM-JavaScript-Tutorial](https://github.com/rcarrioncanonico/ESM-JavaScript-Tutorial) only contains one out of all the cognitive tasks that you will have to edit and it just serves as a "play-ground" to familiarize yourself with the in an outs of editing.
+
+It will be easier to download VS-Code to your PC directly and have the modifications done there. This will allow for an easy access to modify the repository which is hosted in GitLab. You will also need to install [Git](https://git-scm.com/install/) you can find installation instructions at the bottom of this tutorial.
+
+Once VS-Code is installed, you will be able to open other repositories with VS-code. To do so go to the repository of the task you´ve been giving access to (remember the "Using ESM Task" section). Depending on the supervisor needs you will want to fork the repository you´ve been given access to, in this way you don´t change the original code, or if you want to make changes to the original repository you will have to have the role of "Developer" or higher.
+
+Click on the original repository or the one you just forked. You will see a big **blue box** with the words "code". Click on it and click one either **Visual Studio Code (SSH)* or *Visual Studio Coe (HTTPS)*, they are both interchangeable, the only difference is that with SSH you can authenticate users using key authentication while HTTPS only supports user/password authentication
+
+<img src="https://i.ibb.co/hxWL0Lvr/Captura-de-pantalla-2026-05-29-160948.png" alt="Captura-de-pantalla-2026-05-29-160948" border="0" /></a>
+
+Once open VS-Code will ask you to select a folder in which the repository will open. You can select any folder you want or create a new one. Choose the file and click on "Select as Respository Destination"
+<img src="https://i.ibb.co/jvxXjpQ5/Captura-de-pantalla-2026-05-29-163059.png" alt="Captura-de-pantalla-2026-05-29-163059" border="0" /></a>
+You will be asked if you trust the contents of the files in which you just have to accept.
+
+If you wish to log-in via SSH you can create your key here [SSH and GPG keys](https://github.com/settings/keys). Once the SSH is created you just copy paste into into the required box in VS-Code.
 
 ---
+
+# More Info
 
 ## Section 2 — Downloads Checklist
 
@@ -185,14 +215,8 @@ Download and install these applications in order to get your computer ready for 
 | 6 | **Pavlovia account** | [pavlovia.org](https://pavlovia.org/) | Free for researchers |
 | 7 | **m-Path account** | [m-path.io](https://m-path.io/) | Coordinate with your supervisor |
 
-### 2c. Optional additional program:
-
-| # | What | Where to get it | Notes |
-|---|------|-----------------|-------|
-| 8 | **PsychoPy Standalone** | [psychopy.org/download.html](https://www.psychopy.org/download.html) | In-case you are curious how PsychoPy looks like|
 
 ---
-
 
 ​
 
