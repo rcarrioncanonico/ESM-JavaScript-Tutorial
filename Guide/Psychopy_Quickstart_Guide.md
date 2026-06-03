@@ -171,7 +171,13 @@ It is important to complete all the JavaScript lessons found in the folder "JS L
 
 ## Editing Digit Symbol Substitution Test.
 
-Now that you´ve gained some knowledge of JavaScript it will be possible to be able to edit the Digit Symbol Substitution Test (DSST).  In the "ESM Task" folder you will find two sub-folders. The first folder "Information_dsst_task" contains a video and a document that will help you understand
+Now that you´ve gained some knowledge of JavaScript it will be possible to be able to edit the Digit Symbol Substitution Test (DSST).  In the "ESM Task" folder you will find two sub-folders. The first folder "Information_dsst_task" contains a video and a document that will help you understand the basics of how the DSST works.
+
+## Veryfing the Changes
+
+The Codespace is equipped with and extension known as "Live Server" this allows us to run a server which hosts the task. Consequently, we can see how changes in the code would alter the task in real-time. To start the server you should want to click on the file "index.html" and then click on "Go Live" which can be found in the bottom right corner of the Codespace. This will open a new tab in your browser with the task running. Every time you make a change in the code and save it, the changes will be reflected in the browser tab. This is a great way to see how your changes affect the task without having to upload it to Pavlovia every time. If you wish to stop the server you just have to click on "Go Live" again and it will stop the server.
+
+<img src="https://i.ibb.co/Pvc6sCtx/Captura-de-pantalla-2026-06-03-132146.png" alt="Captura-de-pantalla-2026-06-03-132146" border="0" /></a>
 
 ## How to edit the other cognitive tasks?
 
@@ -181,15 +187,21 @@ It will be easier to download VS-Code to your PC directly and have the modificat
 
 Once VS-Code is installed, you will be able to open other repositories with VS-code. To do so go to the repository of the task you´ve been giving access to (remember the "Using ESM Task" section). Depending on the supervisor needs you will want to fork the repository you´ve been given access to, in this way you don´t change the original code, or if you want to make changes to the original repository you will have to have the role of "Developer" or higher.
 
-Click on the original repository or the one you just forked. You will see a big **blue box** with the words "code". Click on it and click one either **Visual Studio Code (SSH)* or *Visual Studio Coe (HTTPS)*, they are both interchangeable, the only difference is that with SSH you can authenticate users using key authentication while HTTPS only supports user/password authentication
+Click on the original repository or the one you just forked. You will see a big **blue box** with the words "code". Click on it and click one either **Visual Studio Code (SSH)* or *Visual Studio Coe (HTTPS)*, they are both interchangeable, the only difference is that with SSH you can authenticate users using key authentication while HTTPS only supports user/password authentication. This tutorial will focus on the HTTPS as it is easier to understand.
 
 <img src="https://i.ibb.co/hxWL0Lvr/Captura-de-pantalla-2026-05-29-160948.png" alt="Captura-de-pantalla-2026-05-29-160948" border="0" /></a>
 
 Once open VS-Code will ask you to select a folder in which the repository will open. You can select any folder you want or create a new one. Choose the file and click on "Select as Respository Destination"
 <img src="https://i.ibb.co/jvxXjpQ5/Captura-de-pantalla-2026-05-29-163059.png" alt="Captura-de-pantalla-2026-05-29-163059" border="0" /></a>
-You will be asked if you trust the contents of the files in which you just have to accept.
 
-If you wish to log-in via SSH you can create your key here [SSH and GPG keys](https://github.com/settings/keys). Once the SSH is created you just copy paste into into the required box in VS-Code.
+Once the repository destination is selected you will have to log-in to your github through the pop-up which looks like this
+
+<img src="https://i.ibb.co/KpYG3pj7/Screenshot-2026-06-02-215658.png" alt="Screenshot-2026-06-02-215658" border="0" /></a>
+
+If you wish to log-in via SSH you can create your key here [SSH and GPG keys](https://github.com/settings/keys). Once the SSH is created you just copy paste into into the required box in VS-Code. Alternatively you can just click on password and log in normally, with your username and password.
+
+Finally, you will be asked if you trust the contents of the files in which you just have to accept.
+
 
 ---
 
@@ -214,7 +226,6 @@ Download and install these applications in order to get your computer ready for 
 | 5 | **Github** | [GitHub](https://github.com/) | Needed to sync with VS-Code and to access AI Copilot for easy coding |
 | 6 | **Pavlovia account** | [pavlovia.org](https://pavlovia.org/) | Free for researchers |
 | 7 | **m-Path account** | [m-path.io](https://m-path.io/) | Coordinate with your supervisor |
-
 
 ---
 
