@@ -217,9 +217,9 @@ Finally, you will be asked if you trust the contents of the files in which you j
 
 # More Info
 
-## Section 2 — Downloads Checklist
+## Git Download
 
-Download and install these applications in order to get your computer ready for programming.
+Git is necessary to install in order to be able to synchronize your changes to the GitLab repository
 
 ### 2a. What to Download
 
@@ -228,16 +228,6 @@ Download and install these applications in order to get your computer ready for 
 | 1 | **Git** | [Git - Install](https://git-scm.com/install/) | Necessary to Push code to Pavlovia |
 
 > **Important:** During Git Installation there will be a window that will ask you to choose a default editor, be sure to select Visual Studio Code just like in this image:<img src="https://i.imgur.com/0J9Z70F.jpeg" alt="Git editor selection" width="325"> This is the only modification you have to do during Git installation.
-
-### 2b. Necessary Accounts
-
-| # | What | Where to get it | Notes |
-|---|------|-----------------|-------|
-| 5 | **Github** | [GitHub](https://github.com/) | Needed to sync with VS-Code and to access AI Copilot for easy coding |
-| 6 | **Pavlovia account** | [pavlovia.org](https://pavlovia.org/) | Free for researchers |
-| 7 | **m-Path account** | [m-path.io](https://m-path.io/) | Coordinate with your supervisor |
-
----
 
 ​
 
