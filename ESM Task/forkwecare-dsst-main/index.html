@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        
+        <!-- Title and icon shown in browser tab -->
+        <link rel="icon" type="image/png" href="assets/images/favicon-48.png" />
+        <title>Cognitive EMA</title>
+
+        <!-- Include Libraries -->
+        <script src="src/libs/phaser.min.js"></script>
+        <script src="src/libs/jspsych-7.1.2/jspsych.js"></script>
+        <script type="text/javascript" src="src/libs/jspsych-7-pavlovia-2022.1.1.js"></script>
+
+        <!-- Include CSS style -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+    </head>
+
+    <body>
+        <!-- Preload the fonts for phaser to use -->
+        <div style="font-family:body; position:absolute; left:-1000px; visibility:hidden;">.</div>
+        <div style="font-family:header; position:absolute; left:-1000px; visibility:hidden;">.</div>
+        
+        <!-- Container which holds the game -->
+        <div id="game-container"></div>
+        
+        <!-- Configure global variables -->
+        <script> 
+            const jsPsych = initJsPsych(); // initiate jsPsych for collecting data
+            const urlParams = new URLSearchParams(window.location.search); // used to read query parameters from top url
+            const LANG = urlParams.get("lang") ? urlParams.get("lang") : "nl" // Check or set language
+            const PARTICIPANT_ID = urlParams.get("participant") ? urlParams.get("participant") : window.crypto.randomUUID(); // Check participant or set random ID
+            const BEEPNUM = urlParams.get("beepnum") ? urlParams.get("beepnum") : 1; // Check or set EMA beep number
+            const TESTDAY = urlParams.get("testday") ? urlParams.get("testday") : 1; // Check of set testday
+        </script>
+
+        <!-- Load main game script -->
+        <script type="module" src="src/main.js"></script>
+    </body>
+</html>

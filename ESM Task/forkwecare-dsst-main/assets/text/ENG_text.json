@@ -1,0 +1,9 @@
+{
+    "start_message": "What bad luck...the safe is locked.\n\nLuckily, you can crack the secret code!\n\nFirst, there will be an explanation. You do not need to do anything yet.\n\nPress the button to continue.",
+    "practice_message": "Well done!\n\nBut...the safe will not open that easily.\n\nThe digits have now been replaced by symbols.\n\nPress the button for the new explanation.",
+    "run_message": "Press the number that matches the symbol as often as possible.\n\nYou have 1 minute.\n\nAre you ready? Then press start.",
+    "baseline_instruction": "you will see a digit, then choose the correct key",
+    "practice_instruction": "you will see a symbol, find the matching number, then choose the correct key",
+    "end_screen": "\n\n\n\nThis is the end of this task.\nThe next task will start automatically.",
+    "next_button": "next"
+}

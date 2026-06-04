@@ -1,0 +1,9 @@
+{
+    "start_message": "Wat een pech...de kluis zit op slot.\n\nGelukkig kan jij de geheime code kraken!\n\nEr volgt eerst een uitleg. Hierbij hoef je niets te doen.\n\nDruk op de knop om door te gaan.",
+    "practice_message": "Goed gedaan!\n\nMaar...zo makkelijk krijg je de kluis niet open.\n\nDe cijfers zijn nu vervangen door symbolen.\n\nDruk op de knop voor de nieuwe uitleg.",
+    "run_message": "Toets zo vaak mogelijk het cijfer in dat bij het symbool past.\n\nJe hebt 1 minuut.\n\nBen je er klaar voor? Druk dan op start.",
+    "baseline_instruction": "je ziet straks een cijfer, kies daarna de goede toets",
+    "practice_instruction": "je ziet straks een symbool, zoek het passende cijfer, kies daarna de goede toets",
+    "end_screen": "\n\n\n\nDit is het einde van deze taak.\nDe volgende taak begint automatisch.",
+    "next_button": "volgende"
+}
