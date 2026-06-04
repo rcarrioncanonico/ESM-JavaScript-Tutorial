@@ -34,9 +34,9 @@
 | # | What | Where to get it | Notes |
 |---|------|-----------------|-------|
 | 1 | **Git** | [Git - Install](https://git-scm.com/install/) | Necessary to Push code to Pavlovia |
-| 2 | **Codespace** | Link | Allows Code Editing |
-| 3 | **Pavlovia** | Link | Hosts ESM Task & Collects Data
-| 4 | **m-Path** | Link | Necessary for Scheduled Notification |
+| 2 | **Codespace** | [Link](https://github.com/rcarrioncanonico/ESM-JavaScript-Tutorial) | Allows Code Editing |
+| 3 | **Pavlovia** | [Pavlovia](https://pavlovia.org/explore?sort=DEFAULT)| Hosts ESM Task & Collects Data
+| 4 | **m-Path** | [m-Path: ESM & EMA Platform](https://m-path.io/) | Necessary for Scheduled Notification |
 
 ---
 
@@ -52,9 +52,9 @@ Before you can start using an existing task in Pavlovia, you need to create an a
 
 Before we get started it is important to know the difference between GitLab and Pavlovia. These are two different websites which shares the same account we just created in the step above.
 
-[Pavlovia](https://pavlovia.org/#main) provides the interface to manage participants, assign credits and launch studies. It mainly acts as a dashboard to have a holistic view for the management of your experiment. Is the "storefront" and the execution server where partiicpants actually interact with the experiment.
+[Pavlovia](https://pavlovia.org/#main) provides the interface to manage participants, assign credits and launch studies. It mainly acts as a dashboard to have a holistic view for the management of your experiment. Is the "storefront" and the execution server where particpants actually interact with the experiment.
 
-[GitLab](https://gitlab.pavlovia.org/) acts as the backend for Pavlovia. Every Pavlovia experiment is a Git repository. In simple words, GitLab acts as "storehouse" of code and data. Each experiment in Pavlovia has a repository (container/place) in GitLap. It is here were we are going to **fork** projects and get the code for editing.
+[GitLab](https://gitlab.pavlovia.org/) acts as the backend for Pavlovia. Every Pavlovia experiment is a Git repository. In simple words, GitLab acts as "storehouse" of code and data. Each experiment in Pavlovia has a repository (container/place) in GitLab. It is here were we are going to **fork** projects and get the code for editing.
 
 ### Pavlovia Tour
 
@@ -64,11 +64,11 @@ On the main page of [Pavlovia](https://pavlovia.org/#main), you will see differe
 
 In the previous section, we touched on **forking**. By doing a **fork**, we essentially copy the **repository** (a folder with all the experiment contents), which allows us to make changes to the **code** without affecting the original project.
 
-To fork a project, go to Explore and look up an experiment you want to copy. For simplicity, in this tutorial we will look at the Featured Experiments. Here you can find a task named "antisaccade". Hover your mouse over the experiment and click on "view code." It should look like this:
+To fork a project, go to **Explore** and look up an experiment you want to copy. For simplicity, in this tutorial we will look at the *Featured Experiments*. Here you can find a task named "antisaccade". Hover your mouse over the experiment and **click** on "view code." It should look like this:
 
 <img src="https://i.ibb.co/pjBX5gjd/Captura-de-pantalla-2026-04-22-161126.png" alt="Captura-de-pantalla-2026-04-22-161126" border="0" width = 200>
 
-This will redirect you to the repository page of the experiment, in other words, it has redirect you to GitLap. In this repository, you will find all the files that make up the experiment. Here, you will want to "fork" the repository. You can do this by clicking on "Forks."
+This will redirect you to the repository page of the experiment, in other words, it has redirect you to GitLab. In this repository, you will find all the files that make up the experiment. Here, you will want to "fork" the repository. You can do this by clicking on "Forks."
 
 <img src="https://i.ibb.co/PGkvQvc3/Captura-de-pantalla-2026-03-22-103246.png" alt="Captura-de-pantalla-2026-03-22-103246" ></a>
 
@@ -84,7 +84,7 @@ To change the status of your experiment, click on the row where your experiment 
 
 <img src="https://i.ibb.co/d4HnfWzC/Captura-de-pantalla-2026-04-22-163331.png" alt="Captura-de-pantalla-2026-04-22-163331" border="0" /></a>
 
-After you click this, a page will appear with the option to change the status of your experiment to "Running." Once you click on "Running," the status will change. There will also be a URL, as highlighted in the image below. You can send this URL to your participants to gather data.
+After you click this, a page will appear with the option to change the status of your experiment to "Running." Once you click on "Running," the status will change. There will also be a **URL**, as highlighted in the image below. You can send this URL to your participants to gather data.
 
 <img src="https://i.ibb.co/MyL52VPV/Captura-de-pantalla-2026-03-22-182421.png" alt="Captura-de-pantalla-2026-03-22-182421" border="0" /></a>
 
@@ -106,17 +106,20 @@ Since we forked another person's repository, we also copied all previously colle
 
 Now that you have an idea on how Pavlovia and GitLab works, its time to use the existing ESM task for data collection.
 
-The process is simple. First request access to the repository with the already existing code. If you have access to the repository from your supervisor account you can send yourself and invite. First go to the overview board, [Projects · GitLab](https://gitlab.pavlovia.org/), click on the project you want to be part of. Once there go to management --> memebers --> Invite members
+The process is simple. First request access to the repository with the already existing code. If you have access to the repository from your supervisor account you can send yourself and invite. This is how you send the invite. First go to the overview board, [Projects · GitLab](https://gitlab.pavlovia.org/), click on the project you want to be part of. Once there go to management --> memebers --> Invite members
 
 <img src="https://i.ibb.co/nsNcH9cM/Captura-de-pantalla-2026-04-22-172143.png" alt="Captura-de-pantalla-2026-04-22-172143" border="0" /></a>
 
-Next fill in your username, select the role of reporter and discuss with your supervisor the access time granted for your in this repository, preferably before data collection starts.
+Next fill in the username, select the role of reporter and discuss with your supervisor the access time granted for your in this repository, preferably before data collection starts. Otherwise if the repository already includes data, the data file can be stored in a local file, deleted from the repository and once the student forks the experiment the data file can be re-uploaded to the repository.
+
 
 <img src="https://i.ibb.co/MFMYND5/Captura-de-pantalla-2026-04-22-172405.png" alt="Captura-de-pantalla-2026-04-22-172405" border="0" /></a>
 
-Once this is done the project will appear on your overview board [Projects · GitLab](https://gitlab.pavlovia.org/), and will be ready to fork.
+Once this is done the project will appear on your overview board [Projects · GitLab](https://gitlab.pavlovia.org/), and will be ready to fork. Alternatively, if you wish to get the URL for data gathering using the task you have been granted access to, you can repeat the steps on the Using Existing Task section. The new repository you now have access to will appear in *Experiments* on the Pavlovia website.
 
 <img src="https://i.ibb.co/mrYwjTwz/Captura-de-pantalla-2026-05-29-160631.png" alt="Captura-de-pantalla-2026-05-29-160631" border="0" /></a>
+
+---
 
 # ESM task blueprint
 
@@ -132,7 +135,7 @@ Just as you wouldn't rewire a house without knowing what you're doing, there are
 
 # Adjusting an Existing Task
 
-Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. To do so you will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. It is also important to learn some JavaScript concepts, which can also be found inside the Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
+Now that you know how to use an existing task, you may want to make some adjustments to it. For example, you may want to change the instructions, add a new stimulus, or modify the timing of the task. To do this, you will need to edit the code of the task. We will need to use a code editor, and for this tutorial, we will use VS Code inside Github Codespace. It is also important to learn some JavaScript concepts, lessons for this can also be found inside the Github Codespace. In the following sections, we will explain how to access Github Codespace and how to use it to edit the code of your task.
 
 ## Accessing Github Codespace
 
@@ -146,7 +149,7 @@ To access the Github Codespace you will need a Github account, you can create on
 
 <img src="https://i.ibb.co/mV5V3yK9/Captura-de-pantalla-2026-03-27-172751.png" alt="Captura-de-pantalla-2026-03-27-172751" border="0" /></a>
 
-Once you click on "Open in a codespace" it will take a few minutes to load all the necessary things and then you will be able to see the VS-Code interface with all the files of the repository. For starters, we will work with the file named "Jupyter_Starter.ipynb" which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. The file can be found in the Explorer Panel in the folder called "1 First Folder to Open".
+Once you click on "Open in a codespace" it will take a few minutes to load all the necessary things (around 2-4 minutes) and then you will be able to see the VS-Code interface with all the files of the repository. For starters, we will work with the file named **"Jupyter_Starter.ipynb"** which is a Jupyter Notebook file that contains the basic of how Jupyter Notebook operates and contains some fundamental information about JavaScript. The file can be found in the Explorer Panel in the folder called **"1 First Folder to Open"**.
 
 It is important to know that changes done in your own codespace will be saved in your own workspace and will not affect the original repository. This means that you can make changes to the code without worrying about breaking anything for other people. Just be sure to not eliminate your codespace, if you do so, all the changes you made will be lost and you will have to create a new codespace and start from scratch.
 
@@ -171,13 +174,17 @@ It is important to complete all the JavaScript lessons found in the folder "JS L
 
 ## Editing Digit Symbol Substitution Test.
 
-Now that you´ve gained some knowledge of JavaScript it will be possible to be able to edit the Digit Symbol Substitution Test (DSST).  In the "ESM Task" folder you will find two sub-folders. The first folder "Information_dsst_task" contains a video and a document that will help you understand the basics of how the DSST works.
+Now that you´ve gained some knowledge of JavaScript it will be possible to be able to edit the Digit Symbol Substitution Test (DSST).  In the **"ESM Task"** folder you will find two sub-folders. The first folder **"Information_dsst_task"** contains a video and a document that will help you understand the basics of how the DSST code works.
 
-## Veryfing the Changes
+## Running the Task
 
-The Codespace is equipped with and extension known as "Live Server" this allows us to run a server which hosts the task. Consequently, we can see how changes in the code would alter the task in real-time. To start the server you should want to click on the file "index.html" and then click on "Go Live" which can be found in the bottom right corner of the Codespace. This will open a new tab in your browser with the task running. Every time you make a change in the code and save it, the changes will be reflected in the browser tab. This is a great way to see how your changes affect the task without having to upload it to Pavlovia every time. If you wish to stop the server you just have to click on "Go Live" again and it will stop the server.
+The Codespace is equipped with and extension known as "Live Server" this allows us to run a server which hosts the task. Consequently, we can see how *changes in the code* would alter the task in real-time. To start the server you should want to click on the file "index.html" and then click on "Go Live" which can be found in the bottom right corner of the Codespace. This will open a new tab in your browser with the task running. Every time you make a change in the code and save it, the changes will be reflected in the browser tab. This is a great way to see how your changes affect the task without having to upload it to Pavlovia every time. If you wish to stop the server you just have to click on "Go Live" again and it will stop the server.
 
 <img src="https://i.ibb.co/Pvc6sCtx/Captura-de-pantalla-2026-06-03-132146.png" alt="Captura-de-pantalla-2026-06-03-132146" border="0" /></a>
+
+## README.md (Configuring)
+
+
 
 ## How to edit the other cognitive tasks?
 
@@ -185,9 +192,9 @@ Since the [ESM-JavaScript-Tutorial](https://github.com/rcarrioncanonico/ESM-Java
 
 It will be easier to download VS-Code to your PC directly and have the modifications done there. This will allow for an easy access to modify the repository which is hosted in GitLab. You will also need to install [Git](https://git-scm.com/install/) you can find installation instructions at the bottom of this tutorial.
 
-Once VS-Code is installed, you will be able to open other repositories with VS-code. To do so go to the repository of the task you´ve been giving access to (remember the "Using ESM Task" section). Depending on the supervisor needs you will want to fork the repository you´ve been given access to, in this way you don´t change the original code, or if you want to make changes to the original repository you will have to have the role of "Developer" or higher.
+Once VS-Code is installed, you will be able to open GitLab repositories with the locally installed VS-code. To do so go to the repository of the task you´ve been giving access to (remember the "Using ESM Task" section). Depending on the supervisor needs you will want to fork or not the repository you´ve been given access to, in this way you don´t change the original code. If you want to make changes to the original repository you will have to have the role of *"Developer"* or higher.
 
-Click on the original repository or the one you just forked. You will see a big **blue box** with the words "code". Click on it and click one either **Visual Studio Code (SSH)* or *Visual Studio Coe (HTTPS)*, they are both interchangeable, the only difference is that with SSH you can authenticate users using key authentication while HTTPS only supports user/password authentication. This tutorial will focus on the HTTPS as it is easier to understand.
+Click on the original repository or the one you just forked. You will see a big **blue box** with the words "code". Click on it and click one *Visual Studio Coe (HTTPS)*,  the difference between SSH and HTTPS is that with SSH you can authenticate users using key authentication while HTTPS only supports user/password authentication. This tutorial will focus on the HTTPS as it is easier to understand.
 
 <img src="https://i.ibb.co/hxWL0Lvr/Captura-de-pantalla-2026-05-29-160948.png" alt="Captura-de-pantalla-2026-05-29-160948" border="0" /></a>
 
@@ -198,9 +205,12 @@ Once the repository destination is selected you will have to log-in to your gith
 
 <img src="https://i.ibb.co/KpYG3pj7/Screenshot-2026-06-02-215658.png" alt="Screenshot-2026-06-02-215658" border="0" /></a>
 
-If you wish to log-in via SSH you can create your key here [SSH and GPG keys](https://github.com/settings/keys). Once the SSH is created you just copy paste into into the required box in VS-Code. Alternatively you can just click on password and log in normally, with your username and password.
+If you wish to log-in via *Personal Access Token* you can create your key here [SSH and GPG keys](https://github.com/settings/keys). Once the SSH is created you just copy paste into into the required box in VS-Code. Alternatively you can just click on *password* and log in normally, with your username and password.
 
 Finally, you will be asked if you trust the contents of the files in which you just have to accept.
+
+## How to Synch Changes to GitLab
+
 
 
 ---
